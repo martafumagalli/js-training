@@ -6,6 +6,17 @@
  *
  */
 
+function total(x) {
+
+    let tot = 0;
+  
+    for(var i=0;i<x.length;i++) {
+        tot = tot + x[i];
+    }
+  
+    return tot;
+  } 
+  
 
 //* Begin of tests
 const assert = require('assert')

@@ -10,6 +10,31 @@
 
 // Your code :
 
+function multiply(x,y) {
+
+    let result = 0;
+    let i = 0;
+  
+    if (x === 0 || y === 0) {
+      result === 0;
+    } else if (y > 0) {
+      while (i < y) {      
+          result = result + x;
+          i++;
+        }      
+    } else if (y < 0) {
+      while (i < -y) {      
+        result = result + (-x);
+        i++;
+      }
+    }
+    
+    return result;
+  }
+
+
+
+
 //* Begin of tests
 const assert = require('assert')
 
