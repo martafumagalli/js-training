@@ -11,6 +11,41 @@
 
 // Your code :
 
+
+function multiply(a,b,c) {
+  debugger
+
+  // TERMINATION
+  if (a === 0 || b === 0) 
+  return 0;
+  // BASECASE
+  if (a === 1)
+  return b;
+  // RECURSIVE
+  return multiply(a-1, b + c, c) + b;
+}
+
+multiply(7,3);
+
+function multiply(num1, num2){
+
+
+if (num1 == 0 || num2 == 0) {
+  return 0;
+}
+
+else if( num2 < 0 ) {
+return - num1 + multiply(num1, num2 + 1);
+}
+
+else {
+return num1 + multiply(num1, num2 - 1);
+}
+}
+
+multiply(3,7);
+
+
 //* Begin of tests
 const assert = require('assert')
 
